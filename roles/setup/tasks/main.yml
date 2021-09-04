@@ -14,14 +14,6 @@
   apt: 
     autoremove: yes
 
-- name: "check node version"
-  command: node -v
-  register: result
-  
-- name: printout
-    debug:
-      msg: "{{result}}"
-
 
 - name: "install npm"
   become: yes
